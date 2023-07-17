@@ -1,0 +1,58 @@
+/* TYPOGRAPHY */
+
+.article-introdution h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.article-body h3,
+.article-body h4,
+.article-introdution h3 {
+    font-size: 2.5rem;
+}
+
+.article-body p,
+.article-introdution p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 0.6em;
+    font-style: italic;
+}
+
+/* LAYOUT */
+
+.article-body,
+.article-introdution {
+        width: 90%;
+        margin: 1em auto 2.5em;
+    }
+
+.article-body h3,
+.article-body h4,
+.article-body p,
+.article-introdution h2,
+.article-introdution h3 {
+     padding: 1em 0;
+}
+
+figure {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    figure {
+        width: 100%;
+    }
+
+    .article-introdution h2 {
+        font-size: 3.5rem;
+    }
+}

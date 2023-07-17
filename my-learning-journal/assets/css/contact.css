@@ -1,0 +1,69 @@
+/* TYPOGRAPHY */
+
+input, textarea, #submit-btn {
+    font-size: 2rem;
+    outline: none;
+}
+
+label {
+    font-size: 2rem;
+    font-weight: 800
+}
+
+textarea {
+    text-decoration: none;
+    font-family: inherit;
+    resize: none;
+}
+
+/* LAYOUT */
+
+.form-contact-container {
+    margin: 3em auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contact-container, input, textarea {
+    max-width: 350px;
+    width: 100%;
+}
+
+input, textarea, #submit-btn {
+    border: 1px solid black;
+    padding: 0.4em 0.8em;
+    margin: 1em auto;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* BUTTONS */
+
+#submit-btn {
+    color: #141414;
+    font-weight: 800;
+    margin-bottom: 3em;
+    background-color: #ECECEC;
+    cursor: pointer;
+    width: 100%;
+}
+
+#submit-btn:hover {
+    background-color: #141414;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .form-contact-container , textarea, input {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    input, textarea, #submit-btn {
+        padding: 1em;
+    }
+    
+}

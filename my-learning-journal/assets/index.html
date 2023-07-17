@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unlock the world of web development with our comprehensive blog! Discover the essential skills, best resources, and expert tips to kickstart your journey in learning web development. From HTML and CSS basics to advanced JavaScript techniques, dive into the realm of coding and create stunning websites. Start your web development learning adventure today!">
+    <link rel="preload" href="./css/styles.css" as="style">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="preload" href="./js/main.js" as="script">
+    <link rel="preload" href="./js/navbar.js" as="script">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <title>My learning journal</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="site-title-container">
+                <img src="./images/my-learning-journal-logo.png" alt="logo" class="logo">
+                <h1 class="site-title">My learning journal</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./pages/about.html">ABOUT ME</a></li>
+                    <li><a href="./pages/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu">
+                <div class="bar"></div>
+            </button>
+            <nav class="navbar-mobile">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./pages/about.html">ABOUT ME</a></li>
+                    <li><a href="./pages/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-section">
+        <section class="cover-section">    
+            <article class="article-featured">
+                <div class="article-recent-main">
+                    <img src="./images/cover-article.webp" alt="A man writing code on his laptop" class="article-cover-image" width="1080" height="300">
+                    <div class="article-body-container">
+                        <p class="article-info"><time= datetime="2023-07-11">July 11, 2023</time> | 0 comments</p>
+                        <h2 class="article-title-cover">Mastering JavaScript: Understanding Learning Objects</h2>
+                        <p class="article-description">To become proficient in JavaScript, it is crucial to grasp the concept of learning objects. Objects play a vital role in JavaScript...</p>
+                        <a href="./articles/article1.html" class="article-read-more article-read-more__white">CONTINUE READING</a>
+                    </div>      
+                </div>
+            </article>
+            
+        </section>
+
+        <section class="section-feed">
+            <div class="article-feed">
+                
+            </div>
+            <div class="view-more-articles">
+
+            </div>
+            <button class="btn view-more-btn" id="view-more-btn">View More</button>
+            <button class="btn view-less-btn" id="view-less-btn">View Less</button>
+        </section>
+    </main>
+
+    <footer>
+        <strong>My Learning Journal</strong><br>
+        &copy 2023 - Florent Vogel - all rights reserved
+    </footer>
+    <script src="./js/main.js" type="module" defer></script>
+    <script src="./js/navbar.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unlock the world of web development with our comprehensive blog! Discover the essential skills, best resources, and expert tips to kickstart your journey in learning web development. From HTML and CSS basics to advanced JavaScript techniques, dive into the realm of coding and create stunning websites. Start your web development learning adventure today!">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <title>My learning journal: Contact</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="site-title-container">
+                <img src="../images/my-learning-journal-logo.png" alt="logo" class="logo">
+                <h1 class="site-title">My learning journal</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../pages/about.html">ABOUT ME</a></li>
+                    <li><a href="../pages/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu">
+                <div class="bar"></div>
+            </button>
+            <nav class="navbar-mobile">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../pages/about.html">ABOUT ME</a></li>
+                    <li><a href="../pages/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section> 
+            <div class="form-contact-container">
+                <form method="post" id="form-contact" action="#">
+                    <label for="firstname">FIRSTNAME:</label>
+                    <input 
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="Enter your firstname"
+                    aria-label="enter your firstname"
+                    required
+                    >
+
+                    <label for="lastname">LASTNAME:</label>
+                    <input 
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Enter your lastname"
+                    aria-label="enter your lastname"
+                    required
+                    >
+
+                    <label for="email">EMAIL ADDRESS:</label>
+                    <input 
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                    aria-label="enter your email addrees"
+                    pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}"
+                    required
+                    >
+                    
+                    <label for="message">YOUR MESSAGE:</label>
+                    <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Please type your message"
+                    required
+                    ></textarea>
+                    <button
+                    type="submit"
+                    id="submit-btn"
+                    value="submit"
+                    aria-label="submit button">SUBMIT</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="recent-articles">
+            <p class="recent-posts-title">Recent Posts</p>
+            <div class="recent-articles-feed">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <strong>My Learning Journal</strong><br>
+        &copy 2023 - Florent Vogel - all rights reserved
+    </footer>
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/recent-posts.js" type="module" defer></script>
+</body>
+</html>
